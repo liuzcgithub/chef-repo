@@ -1,0 +1,49 @@
+{
+	"name": "RAT_IHS_SSL_cfg @revisionID",
+	"version": "1.0.0.0",
+	"description": "Configure IHS with CLM 4 nodes application servers",
+	"command": "sh /tmp/RAT_IHS_SSL_config/IHS_config.sh",
+	"log": "/tmp/RAT_IHS_SSL_config/log",
+	"location": "/tmp/RAT_IHS_SSL_config/",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0",
+	"keys":
+	[
+		{
+			"scriptkey": "NUMBER_OF_CUSTOM_NODES",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "4"
+		},
+		{
+			"scriptkey": "appnode0",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "${StandalonePart.hostname}.${StandalonePart.domain}"
+		},
+		{
+			"scriptkey": "appnode1",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "${StandalonePart8.hostname}.${StandalonePart8.domain}"
+        },
+		{
+			"scriptkey": "appnode2",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "${StandalonePart10.hostname}.${StandalonePart10.domain}"
+        },
+		{
+            		"scriptkey": "appnode3",
+            		"scriptvalue": "",
+			"scriptdefaultvalue": "${StandalonePart14.hostname}.${StandalonePart14.domain}"
+        },
+		{
+			"scriptkey": "SCRIPTS_DIR",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "/tmp/RAT_IHS_SSL_config"
+		},
+		{
+			"scriptkey": "ihshost",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "${IHSPart_.hostname}.${IHSPart_.domain}"
+		}
+	]
+}

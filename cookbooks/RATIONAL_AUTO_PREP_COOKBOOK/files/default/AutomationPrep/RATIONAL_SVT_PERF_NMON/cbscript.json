@@ -1,0 +1,11 @@
+{
+	"name": "Rational Performance - Install NMON",
+	"version": "1.0.0.0",
+	"description": "Install NMON Performance Tool",
+	"command": "sh sh /tmp/NMON/Install_NMON.sh",
+	"log": "/tmp/NMON/log",
+	"location": "/tmp/NMON",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0"
+}

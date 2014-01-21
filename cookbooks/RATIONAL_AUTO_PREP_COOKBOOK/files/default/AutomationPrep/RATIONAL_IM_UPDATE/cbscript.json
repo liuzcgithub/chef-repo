@@ -1,0 +1,19 @@
+{
+	"name": "RAT_IM_Update",
+	"version": "1.0.0.0",
+	"description": "Update IM to specific version",
+	"command": "sh /tmp/RAT_IM_update/IM_UPDATE.sh",
+	"log": "/tmp/RAT_IM_update/log",
+	"location": "/tmp/RAT_IM_update/",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0",
+	"keys":
+	[
+		{
+			"scriptkey": "IM_VERSION",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "153"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"name": "RAT_IM_keyring",
+	"version": "1.0.0.0",
+	"description": "Place keyring file on vm",
+	"command": "echo placing keyring file",
+	"log": "",
+	"location": "/tmp/IM_Keyring",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0"
+	
+}

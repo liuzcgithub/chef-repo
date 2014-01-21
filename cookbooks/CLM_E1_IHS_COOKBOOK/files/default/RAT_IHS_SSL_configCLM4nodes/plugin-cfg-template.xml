@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!--HTTP server plugin config file for the webserver CloudBurstCell_1.fit-vm8-080.rtp.raleigh.ibm.com-node.webserver1 generated on 2012.07.18 at 10:55:17 PM UTC-->
+<Config ASDisableNagle="false" AcceptAllContent="true" AppServerPortPreference="HostHeader" ChunkedResponse="false" FIPSEnable="false" FailoverToNext="false" HTTPMaxHeaders="300" IISDisableNagle="false" IISPluginPriority="High" IgnoreDNSFailures="false" OS400ConvertQueryStringToJobCCSID="false" RefreshInterval="60" ResponseChunkSize="64" SSLConsolidate="true" TrustedProxyEnable="false" VHostMatchingCompat="false">
+   <Log LogLevel="Error" Name="/opt/IBM/Plugins/logs/_WebServerMerge_/http_plugin.log"/>
+   <Property Name="ESIEnable" Value="true"/>
+   <Property Name="ESIMaxCacheSize" Value="1024"/>
+   <Property Name="ESIInvalidationMonitor" Value="false"/>
+   <Property Name="ESIEnableToPassCookies" Value="false"/>
+   <Property Name="ESICacheidFull" Value="false"/>
+   <Property Name="PluginInstallRoot" Value="/opt/IBM/Plugins/"/>
+   <VirtualHostGroup Name="default_host">
+      <VirtualHost Name="*:9080"/>
+      <VirtualHost Name="*:80"/>
+      <VirtualHost Name="*:9443"/>
+      <VirtualHost Name="*:5060"/>
+      <VirtualHost Name="*:5061"/>
+      <VirtualHost Name="*:443"/>
+   </VirtualHostGroup>
+   <ServerCluster CloneSeparatorChange="false" GetDWLMTable="false" IgnoreAffinityRequests="true" LoadBalance="Round Robin" Name="server1__WebServer0_Node_Name__Cluster" PostBufferSize="64" PostSizeLimit="-1" RemoveSpecialHeaders="true" RetryInterval="60">
+      <Server ConnectTimeout="0" ExtendedHandshake="false" MaxConnections="-1" Name="_WebServer0_Node_Name__server1" ServerIOTimeout="900" WaitForContinue="false">
+         <Transport Hostname="_WebServer0_Host_Name_" Port="9080" Protocol="http"/>
+         <Transport Hostname="_WebServer0_Host_Name_" Port="9443" Protocol="https">
+            <Property Name="keyring" Value="/opt/IBM/Plugins/config/_WebServerMerge_/plugin-key.kdb"/>
+            <Property Name="stashfile" Value="/opt/IBM/Plugins/config/_WebServerMerge_/plugin-key.sth"/>
+         </Transport>
+      </Server>
+   </ServerCluster>
+   <ServerCluster CloneSeparatorChange="false" GetDWLMTable="false" IgnoreAffinityRequests="true" LoadBalance="Round Robin" Name="server1__WebServer1_Node_Name__Cluster" PostBufferSize="64" PostSizeLimit="-1" RemoveSpecialHeaders="true" RetryInterval="60">
+      <Server ConnectTimeout="0" ExtendedHandshake="false" MaxConnections="-1" Name="_WebServer1_Node_Name__server1" ServerIOTimeout="900" WaitForContinue="false">
+         <Transport Hostname="_WebServer1_Host_Name_" Port="9080" Protocol="http"/>
+         <Transport Hostname="_WebServer1_Host_Name_" Port="9443" Protocol="https">
+            <Property Name="keyring" Value="/opt/IBM/Plugins/config/_WebServerMerge_/plugin-key.kdb"/>
+            <Property Name="stashfile" Value="/opt/IBM/Plugins/config/_WebServerMerge_/plugin-key.sth"/>
+         </Transport>
+      </Server>
+   </ServerCluster>
+   <ServerCluster CloneSeparatorChange="false" GetDWLMTable="false" IgnoreAffinityRequests="true" LoadBalance="Round Robin" Name="server1__WebServer2_Node_Name__Cluster" PostBufferSize="64" PostSizeLimit="-1" RemoveSpecialHeaders="true" RetryInterval="60">
+      <Server ConnectTimeout="0" ExtendedHandshake="false" MaxConnections="-1" Name="_WebServer2_Node_Name__server1" ServerIOTimeout="900" WaitForContinue="false">
+         <Transport Hostname="_WebServer2_Host_Name_" Port="9080" Protocol="http"/>
+         <Transport Hostname="_WebServer2_Host_Name_" Port="9443" Protocol="https">
+            <Property Name="keyring" Value="/opt/IBM/Plugins/config/_WebServerMerge_/plugin-key.kdb"/>
+            <Property Name="stashfile" Value="/opt/IBM/Plugins/config/_WebServerMerge_/plugin-key.sth"/>
+         </Transport>
+      </Server>
+   </ServerCluster>
+   <ServerCluster CloneSeparatorChange="false" GetDWLMTable="false" IgnoreAffinityRequests="true" LoadBalance="Round Robin" Name="server1__WebServer3_Node_Name__Cluster" PostBufferSize="64" PostSizeLimit="-1" RemoveSpecialHeaders="true" RetryInterval="60">
+      <Server ConnectTimeout="0" ExtendedHandshake="false" MaxConnections="-1" Name="_WebServer3_Node_Name__server1" ServerIOTimeout="900" WaitForContinue="false">
+         <Transport Hostname="_WebServer3_Host_Name_" Port="9080" Protocol="http"/>
+         <Transport Hostname="_WebServer3_Host_Name_" Port="9443" Protocol="https">
+            <Property Name="keyring" Value="/opt/IBM/Plugins/config/_WebServerMerge_/plugin-key.kdb"/>
+            <Property Name="stashfile" Value="/opt/IBM/Plugins/config/_WebServerMerge_/plugin-key.sth"/>
+         </Transport>
+      </Server>
+   </ServerCluster>
+
+   <UriGroup Name="default_host_server1__WebServer0_Node_Name__Cluster_URIs">
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/ivt/*"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/jts/*"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/admin/*"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/clmhelp/*"/>
+   </UriGroup>
+   <UriGroup Name="default_host_server1__WebServer1_Node_Name__Cluster_URIs">
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/ivt/*"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/ccm/*"/>
+   </UriGroup>
+   <UriGroup Name="default_host_server1__WebServer2_Node_Name__Cluster_URIs">
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/ivt/*"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/qm/*"/>
+   </UriGroup>
+   <UriGroup Name="default_host_server1__WebServer3_Node_Name__Cluster_URIs">
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/rm/*"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/converter/*"/>
+   </UriGroup>
+
+   <Route ServerCluster="server1__WebServer0_Node_Name__Cluster" UriGroup="default_host_server1__WebServer0_Node_Name__Cluster_URIs" VirtualHostGroup="default_host"/>
+   <Route ServerCluster="server1__WebServer1_Node_Name__Cluster" UriGroup="default_host_server1__WebServer1_Node_Name__Cluster_URIs" VirtualHostGroup="default_host"/>
+   <Route ServerCluster="server1__WebServer2_Node_Name__Cluster" UriGroup="default_host_server1__WebServer2_Node_Name__Cluster_URIs" VirtualHostGroup="default_host"/>
+   <Route ServerCluster="server1__WebServer3_Node_Name__Cluster" UriGroup="default_host_server1__WebServer3_Node_Name__Cluster_URIs" VirtualHostGroup="default_host"/>
+
+   <RequestMetrics armEnabled="false" loggingEnabled="false" rmEnabled="false" traceLevel="HOPS">
+      <filters enable="false" type="URI">
+         <filterValues enable="false" value="/snoop"/>
+         <filterValues enable="false" value="/hitcount"/>
+      </filters>
+      <filters enable="false" type="SOURCE_IP">
+         <filterValues enable="false" value="255.255.255.255"/>
+         <filterValues enable="false" value="254.254.254.254"/>
+      </filters>
+      <filters enable="false" type="JMS">
+         <filterValues enable="false" value="destination=aaa"/>
+      </filters>
+      <filters enable="false" type="WEB_SERVICES">
+         <filterValues enable="false" value="wsdlPort=aaa:op=bbb:nameSpace=ccc"/>
+      </filters>
+   </RequestMetrics>
+</Config>

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# chkconfig: 345 99 10
+# description: VNC setup script
+
+# Source function library.
+. /etc/init.d/functions
+
+# Source networking configuration.
+. /etc/sysconfig/network
+
+case "$1" in
+  start)
+        sh /root/vncsetup/VNCroot.sh
+        ;;
+  stop)
+        #stop
+        ;;
+  restart|reload)
+       # stop
+       # sleep 3
+        sh /root/vncsetup/VNCroot.sh
+        ;;
+  condrestart)
+        if [ -f /var/lock/subsys/vncserver ]; then
+          #  stop
+           # sleep 3
+            sh /root/vncsetup/VNCroot.sh
+        fi
+        ;;
+  status)
+         vncserver -list
+        ;;
+  *)
+   echo "Usage Error"
+   exit
+esac

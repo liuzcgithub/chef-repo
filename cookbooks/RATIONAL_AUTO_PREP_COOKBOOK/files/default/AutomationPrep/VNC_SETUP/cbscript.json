@@ -1,0 +1,11 @@
+{
+	"name": "VNC_On_Demand_Setup",
+	"version": "1.0.0.0",
+	"description": "This package gives root access to VNC",
+	"command": "sh /tmp/vncsetup/InstallVNCsetupService.sh",
+	"log": "tmp/vncsetup/log",
+	"location": "/tmp/vncsetup",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0"
+}

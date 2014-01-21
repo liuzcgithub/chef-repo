@@ -1,0 +1,11 @@
+{
+	"name": "InstallTerminal",
+	"version": "1.0.0.0",
+	"description": "Installs Terminal",
+	"command": "sh /tmp/installTerm.sh",
+	"log": "/tmp",
+	"location": "/tmp",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0"
+}

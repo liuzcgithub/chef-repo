@@ -1,0 +1,34 @@
+{
+	"name": "Rational SVT - JTS Setup (Non-Root)",
+	"version": "@revisionID",
+	"description": "Runs CLM JTS Setup and Deploys MTM Sample",
+	"command": "sh /tmp/JTS_SETUP/JTS_WIZ.sh",
+	"log": "/tmp/JTS_SETUP/log",
+	"location": "/tmp/JTS_SETUP",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0",
+	"keys":
+	[
+		{
+			"scriptkey": "RUN_JTS_SCRIPTED_SETUP",
+			"scriptvalue": "Y",
+			"scriptdefaultvalue": "Y"
+		},
+		{
+			"scriptkey": "CLM_TOPOLOGY",
+			"scriptvalue": "",
+			"scriptdefaultvalue": ""
+		},
+		{
+			"scriptkey": "MTM_SAMPLE",
+			"scriptvalue": "N",
+			"scriptdefaultvalue": "N"
+		},
+		{
+			"scriptkey": "IMPORT_LDAP_USERS",
+			"scriptvalue": "N",
+			"scriptdefaultvalue": "N"
+		}
+	]
+}

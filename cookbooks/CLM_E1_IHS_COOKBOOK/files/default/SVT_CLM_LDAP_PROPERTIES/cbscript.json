@@ -1,0 +1,13 @@
+[
+{
+      "name": "Rational SVT - CLM LDAP Properties @revisionID",
+      "version": "1.0.0.0",
+      "description": "Edit LDAPSecurity.properties template to Configure CLM with your personal LDAP server",
+      "command": "echo LDAP Properties File Transfer",
+      "log": "/tmp/LDAP/logs",
+      "location": "/tmp/LDAP",
+      "timeout": "0",
+      "commandargs": ""
+
+}
+]

@@ -1,0 +1,11 @@
+{
+	"name": "RAT_Extract_Cert @revisionID",
+	"version": "1.0.0.0",
+	"description": "",
+	"command": "sh /tmp/Extract_Cert/Extract_Cert.sh",
+	"log": "/tmp/Extract_Cert/log",
+	"location": "/tmp/Extract_Cert/",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0"
+}

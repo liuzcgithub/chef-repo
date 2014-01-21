@@ -1,0 +1,39 @@
+{
+	"name": "RAT_WASCommon @revisionID",
+	"version": "1.0.0.0",
+	"description": "Enables LDAP security, sets Session Management properties",
+	"command": "sh /tmp/WASCommon/WASCommon.sh",
+	"log": "/tmp/WASCommon",
+	"location": "/tmp/WASCommon",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0",
+	"keys":
+	[
+		{
+			"scriptkey": "SSE2012",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "FALSE"
+                },
+		{
+			"scriptkey": "LDAPPROP",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "TivoliPerf"
+		},
+		{
+                        "scriptkey": "dmgrhost",
+                        "scriptvalue": "",
+                        "scriptdefaultvalue": ""
+                },
+                {
+                        "scriptkey": "appnode1",
+                        "scriptvalue": "",
+                        "scriptdefaultvalue": ""
+                },
+                {
+                        "scriptkey": "appnode2",
+                        "scriptvalue": "",
+                        "scriptdefaultvalue": ""
+                }
+	]
+}

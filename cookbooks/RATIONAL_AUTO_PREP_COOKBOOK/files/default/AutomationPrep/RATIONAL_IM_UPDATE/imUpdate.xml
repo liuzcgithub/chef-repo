@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<agent-input clean="true" temporary="true">
+<server>
+<repository location="https://constellation.ratl.swg.usma.ibm.com/IM/_IM_VERSION_/I/cic-offering/repository.config"/>
+</server>
+<install>
+<offering features="agent_core,agent_jre" id="com.ibm.cic.agent"/>
+</install>
+<profile id="IBM Installation Manager" installLocation="_INSTALL_LOC_" kind="self"><data key="eclipseLocation" value="_ECLIPSE_LOC_"/></profile>
+</agent-input>

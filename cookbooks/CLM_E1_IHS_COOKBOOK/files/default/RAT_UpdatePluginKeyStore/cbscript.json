@@ -1,0 +1,11 @@
+{
+	"name": "RAT_UpdatePluginKeyStore @revisionID",
+	"version": "1.0.0.0",
+	"description": "Update IHS plugin key store password",
+	"command": "sh /tmp/RAT_UpdatePluginKeyStore/UpdatePluginKeyStorePW.sh",
+	"log": "/tmp/RAT_UpdatePluginKeyStore",
+	"location": "/tmp/RAT_UpdatePluginKeyStore",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0"	
+}

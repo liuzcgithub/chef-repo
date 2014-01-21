@@ -1,0 +1,12 @@
+{
+	"name": "Rational Create CLM Databases @revisionID",
+	"version": "1.0",
+	"description": "Create CLM Databases",
+	"command": "sh /tmp/createDB.sh",
+	"log": "/tmp/RAT_createCLM_DB.log",
+	"location": "/tmp",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0"
+	
+}

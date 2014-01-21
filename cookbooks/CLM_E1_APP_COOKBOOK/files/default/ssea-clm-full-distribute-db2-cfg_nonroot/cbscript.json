@@ -1,0 +1,34 @@
+{
+	"name": "SSEA-CLM-Full-Distribute-db2-cfg @revisionID",
+	"version": "1.0.0.0",
+	"description": "Work In Progress -- configure and deploy CLM app on distributed server",
+	"command": "sh /tmp/ssea-clm-full-distribute-db2-cfg/config-clm-distributeserver.sh",
+	"log": "/tmp/ssea-clm-full-distribute-db2-cfg",
+	"location": "/tmp/ssea-clm-full-distribute-db2-cfg",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0",
+	"keys":
+	[
+		{
+			"scriptkey": "SCRIPTS_DIR",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "/tmp/ssea-clm-full-distribute-db2-cfg"
+		},
+		{
+			"scriptkey": "COMPONENT",
+			"scriptvalue": "",
+			"scriptdefaultvalue": ""
+		},
+		{
+			"scriptkey": "ihshost",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "${IHSPart_.hostname}.${IHSPart_.domain}"
+		},
+		{
+			"scriptkey": "DB_HOSTNAME",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "${DB2_ESE.hostname}.${DB2_ESE.domain}"
+		}
+	]
+}

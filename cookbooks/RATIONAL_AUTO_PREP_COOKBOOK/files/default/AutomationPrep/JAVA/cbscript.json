@@ -1,0 +1,11 @@
+{
+	"name": "IBM_LAB_JAVA_16",
+	"version": "1.0.0.0",
+	"description": "Installs JAVA 1.6.0",
+	"command": "sh /tmp/IBM_LAB_JAVA_16/IBM_LAB_JAVA_16.sh",
+	"log": "/tmp/IBM_LAB_JAVA_16/log",
+	"location": "/tmp/IBM_LAB_JAVA_16",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0"
+}

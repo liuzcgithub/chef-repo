@@ -1,0 +1,49 @@
+{
+	"name": "RAT_InstallCLM_NoRRC @revisionID",
+	"version": "1.0.0.0",
+	"description": "",
+	"command": "sh /tmp/CLM/InstallCLM.sh",
+	"log": "/tmp/CLM",
+	"location": "/tmp/CLM",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0",
+	"keys":
+	[
+		{
+			"scriptkey": "CLM_Repo_Webserver",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "http://jazzweb.ratl.swg.usma.ibm.com"
+		},
+		{
+			"scriptkey": "CLM_Product",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "calm"
+		},
+		{
+			"scriptkey": "CLM_Build_Type",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "I"
+		},
+		{
+			"scriptkey": "CLM_Suffix",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "repo-web-clm/repository/repository.config"
+		},
+		{
+			"scriptkey": "COMPONENT",
+			"scriptvalue": "",
+			"scriptdefaultvalue": ""
+		},
+		{
+			"scriptkey": "CLM_BUILD_ID",
+			"scriptvalue": "",
+			"scriptdefaultvalue": ""
+		},
+		{
+			"scriptkey": "CLM_BUILD_STREAM",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "main"
+		}
+	]
+}

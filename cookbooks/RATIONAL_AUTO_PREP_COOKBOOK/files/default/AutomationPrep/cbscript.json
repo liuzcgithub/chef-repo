@@ -1,0 +1,48 @@
+{
+	"name": "Rational Core Automation Prep @revisionID",
+	"version": "1.0.0.0",
+	"description": "",
+	"command": "sh /tmp/AutomationPrep/CoreAutomationPrep.sh | tee -a /tmp/main.log",
+	"log": "/tmp/AutomationPrep/log",
+	"location": "/tmp/AutomationPrep",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0",
+	"keys":
+	[
+		{
+			"scriptkey": "IM_VERSION",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "163"
+		},{
+			"scriptkey": "VNC_RES",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "1024x768"
+		},
+		{
+			"scriptkey": "VNCPWD",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "ec11ipse"
+		},
+		{
+			"scriptkey": "CLMPERF",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "1"
+		},
+		{
+			"scriptkey": "ORACLE",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "1"
+		},
+		{
+			"scriptkey": "MEDIA_SERVER",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "https://rtpmsa.raleigh.ibm.com/msa/projects/i/iteimages/software/linux64_x86/RationalCoreAutomation"
+		},
+		{
+			"scriptkey": "AUTO_PREP",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "/tmp/AutomationPrep"
+		}
+	]
+}

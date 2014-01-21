@@ -1,0 +1,24 @@
+{
+	"name": "RAT_CreateWebServers @revisionID",
+	"version": "1.0.0.0",
+	"description": "Add an IHS webserver to WAS profile",
+	"command": "sh /tmp/Create_WebServer/CreateWebServer.sh",
+	"log": "/tmp/Create_WebServer/log",
+	"location": "/tmp/Create_WebServer",
+	"timeout": "0",
+	"commandargs": "",
+	"execmode": "0",
+	"keys":
+	[
+		{
+			"scriptkey": "ihshost",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "${IHSPart_.hostname}.${IHSPart_.domain}"
+		},
+		{
+			"scriptkey": "WebserverName",
+			"scriptvalue": "",
+			"scriptdefaultvalue": "webserver1"
+		}
+	]
+}
