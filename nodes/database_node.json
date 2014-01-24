@@ -1,0 +1,3 @@
+{
+  "run_list": [ "recipe[RATIONAL_AUTO_PREP_COOKBOOK]", "recipe[CLM_E1_DB2_COOKBOOK]" ]
+}
